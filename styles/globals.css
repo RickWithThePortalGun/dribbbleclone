@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+  .hero-text{
+    @apply text-[#0d0c22] max-w-screen-md mt-[40px] mr-auto mb-[24px] leading-[-0.5px]  ml-auto text-7xl max-sm:text-4xl text-center max-sm:w-[80%] font-source_serif_4
+  }
+  .cta-btn{
+    @apply  p-4 font-semibold font-montserrat
+  }
+  .currentColor{
+    color: #0d0c22;
+    
+  }
