@@ -24,16 +24,7 @@ const Carousel = () => {
         tag3: "Web",
       },
     },
-    {
-      id: "blackwoman",
-      src: "/assets/images/blackwoman.png",
-      name: "Helen Tran",
-      job: "Design Director",
-      tag: {
-        tag1: "Product",
-        tag2: "UX",
-      },
-    },
+   
     {
       id: "Yoshi",
       src: "/assets/images/Yoshi.jpg",
@@ -53,6 +44,16 @@ const Carousel = () => {
       tag: {
         tag1: "Product",
         tag2: "UI/UX",
+      },
+    },
+    {
+      id: "blackwoman",
+      src: "/assets/images/blackwoman.png",
+      name: "Helen Tran",
+      job: "Design Director",
+      tag: {
+        tag1: "Product",
+        tag2: "UX",
       },
     },
   ];

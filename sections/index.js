@@ -10,8 +10,10 @@ import Start from "./Start";
 import Features from "./Features";
 import CTA from "./CTA";
 import Hero from "./Hero";
+import WorkCarousel from "./WorkCarousel"
 
 export {
+  WorkCarousel,
   Carousel,
   Connecting,
   Match,

@@ -11,6 +11,7 @@ import {
   CTA,
   Start,
   Connecting,
+  WorkCarousel
 } from "@sections";
 
 export default function Home() {
@@ -44,6 +45,7 @@ export default function Home() {
       <section className="sm:px-16 px-8 sm:py-24 py-12">
         <Why />
       </section>
+      <WorkCarousel />
       <section className="sm:px-16 px-8 sm:py-24 py-12">
         <Work />
       </section>

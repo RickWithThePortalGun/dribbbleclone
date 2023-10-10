@@ -44,7 +44,7 @@ const Hero = () => {
       >
         <h1
           id="top"
-          className="text-[16px] max-sm:text-[12px] inline-block justify-center font-source_serif_4 font-medium py-2 text-[#3d3d4e] max-sm:px-2 leading-snug max-sm:py-1 rounded-full px-4"
+          className="color_box"
         >
           Over 3 million ready-to-work creatives in our community!
         </h1>
