@@ -67,7 +67,7 @@ const Match = () => {
           width={`600`}
           height={`500`}
         />
-        <div className="absolute max-lg:w-[250px]   max-lg:-bottom-[120px] -bottom-[90px]  flex-col p-[20px] right-0 rounded-[30px] flex box-border bg-[#f8f7f4] shadow-md w-[300px] h-auto">
+        <div className="absolute max-lg:w-[250px]   max-lg:-bottom-[120px] -bottom-[90px]  flex-col p-[20px] right-0 rounded-[30px] flex box-border bg-white shadow-md w-[300px] h-auto">
           <div className="flex flex-row gap-4 items-start">
             <div className="w-[50px] h-auto">
               <Image

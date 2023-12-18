@@ -46,7 +46,7 @@ const Connecting = () => {
           Trusted by top brands & businesses
         </h1>
       </motion.div>
-      <div className="">
+      <div className="tracking-wider leading-6">
         <motion.h1 variants={fadeIn("tween",0.5, 0.5)} whileInView={()=>{setHighlight(true)}} initial={`show`}  className="hero-text  max-lg:text-5xl max-lg:w-full
          w-1/2">
           <span className="highlight" >Connecting </span> brands and business builders with the <span id="highlight" >world’s top designers</span>{" "}
@@ -56,9 +56,9 @@ const Connecting = () => {
         variants={fadeIn("tween", 0, 0.5)}
         whileInView={`show`}
         initial={`hidden`}
-        className="flex justify-center max-sm:px-12"
+        className="flex justify-center max-sm:px-6"
       >
-        <h2 className="text-[20px] w-2/3 font-light max-sm:w-full max-sm:text-[20px] text-[#0d0c22] text-center font-inter">
+        <h2 className="text-[20px] w-full font-light max-sm:w-full max-sm:text-[20px] text-[#0d0c22] text-center font-inter">
           The world’s leading brands use Dribbble to hire creative talent.
           Browse millions of top-rated portfolios to find your perfect creative
           match.
