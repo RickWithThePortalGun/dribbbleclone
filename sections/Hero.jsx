@@ -9,19 +9,19 @@ const Hero = () => {
   const [playAnimation, setPlayAnimation] = useState(true);
   useEffect(() => {
     const top = document.getElementById("top");
-    // anime({
-    //   targets: top,
-    //   backgroundColor: [
-    //     { value: "#90EE90" },
-    //     { value: "#ADD8E6" },
-    //     { value: "#FFC0CB" }, // Start color
-    //     { value: "#ffda79" }, // End color
-    //   ],
-    //   duration: 7000, // Duration of the animation in milliseconds
-    //   easing: "easeInOutSine", // Easing function for a smooth transition
-    //   direction: "alternate", // Alternate between start and end colors
-    //   loop: true, // Loop the animation
-    // });
+    anime({
+      targets: top,
+      backgroundColor: [
+        { value: "#90EE90" },
+        { value: "#ADD8E6" },
+        { value: "#FFC0CB" }, // Start color
+        { value: "#ffda79" }, // End color
+      ],
+      duration: 7000, // Duration of the animation in milliseconds
+      easing: "easeInOutSine", // Easing function for a smooth transition
+      direction: "alternate", // Alternate between start and end colors
+      loop: true, // Loop the animation
+    });
 
     const e = document.querySelector("#hero-text");
     if (e) {
