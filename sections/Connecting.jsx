@@ -26,8 +26,8 @@ const Connecting = () => {
     if (e) {
       setTimeout(() => {
         annotate(e, {
-          type: "highlight",
-          color: "#ffda79",
+          type: "underline",
+          color: "#b3fbe3",
           multiline: true,
         }).show();
       }, 2000);

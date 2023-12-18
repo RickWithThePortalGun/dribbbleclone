@@ -58,7 +58,7 @@ const Carousel = () => {
     },
   ];
   return (
-    <div className="pt-[60px] max-lg:pt-0 max-sm:pt-0">
+    <div className="pt-[20px] max-lg:pt-0 max-sm:pt-0">
       <Marquee speed={40} autoFill={true} className="p-2 flex gap-2">
         <div className="flex pl-4 rounded-3xl flex-row gap-4 ">
           {images.map((image, index) => (
@@ -72,7 +72,7 @@ const Carousel = () => {
                 backgroundSize: "cover",
               }}
             >
-              <div className="backdrop-filter backdrop-blur-md bg-opacity-10 bg-black max-sm:-bottom-[65%] -bottom-[70%] left-0 relative bg-transparent w-auto rounded-3xl h-[100px] ">
+              <div className="backdrop-filter backdrop-blur-sm bg-opacity-80 bg-black max-sm:-bottom-[65%] -bottom-[70%] left-0 relative bg-transparent w-auto rounded-3xl h-[100px] ">
                 <div className="flex px-2 absolute bottom-12 flex-col">
                   <p className="text-white font-inter">{image.name}</p>
                   <p className="text-white font-bold text-[12px]">

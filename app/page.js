@@ -17,7 +17,7 @@ import {
 export default function Home() {
   return (
     <div className="relative overflow-x-hidden">
-      <section className="sm:px-16 px-8 sm:py-24 py-12">
+      <section className="sm:px-16 px-8 sm:py-24 py-8">
         <Hero />
       </section>
       <Carousel />
@@ -46,9 +46,7 @@ export default function Home() {
         <Why />
       </section>
       <WorkCarousel />
-      <section className="sm:px-16 px-8 sm:py-24 py-12">
         <Work />
-      </section>
       <CTA />
       <Start />
     </div>
