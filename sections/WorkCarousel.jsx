@@ -4,79 +4,78 @@ import Marquee from "react-fast-marquee";
 const WorkCarousel = () => {
   const firstRow = [
     {
-      id: "",
+      id: "1",
       type: "image",
       src: "/assets/images/7.jpg",
     },
     {
-      id: "",
+      id: "2",
       type: "video",
       src: "/assets/images/6.mp4",
     },
     {
-      id: "",
+      id: "3",
       type: "image",
       src: "/assets/images/5.jpg",
     },
     {
-        id: "",
-        type: "image",
-        src: "/assets/images/4.jpg",
-      },
-      {
-        id: "",
-        type: "image",
-        src: "/assets/images/3.jpg",
-      },
-      {
-        id: "",
-        type: "image",
-        src: "/assets/images/2.jpg",
-      },
-      {
-        id: "",
-        type: "image",
-        src: "/assets/images/1.mp4",
-      },
+      id: "4",
+      type: "image",
+      src: "/assets/images/4.jpg",
+    },
+    {
+      id: "5",
+      type: "image",
+      src: "/assets/images/3.jpg",
+    },
+    {
+      id: "6",
+      type: "image",
+      src: "/assets/images/2.jpg",
+    },
+    {
+      id: "7",
+      type: "video",
+      src: "/assets/images/1.mp4",
+    },
   ];
   const secondRow = [
     {
-      id: "",
+      id: "8",
       type: "image",
       src: "/assets/images/s1.jpg",
     },
     {
-      id: "",
+      id: "9",
       type: "video",
       src: "/assets/images/s2.mp4",
     },
     {
-      id: "",
+      id: "10",
       type: "image",
       src: "/assets/images/s3.jpg",
     },
     {
-        id: "",
-        type: "image",
-        src: "/assets/images/s4.jpg",
-      },
-      {
-        id: "",
-        type: "image",
-        src: "/assets/images/s5.mp4",
-      },
-      {
-        id: "",
-        type: "image",
-        src: "/assets/images/s6.jpg",
-      },
+      id: "11",
+      type: "image",
+      src: "/assets/images/s4.jpg",
+    },
+    {
+      id: "12",
+      type: "image",
+      src: "/assets/images/s5.mp4",
+    },
+    {
+      id: "13",
+      type: "image",
+      src: "/assets/images/s6.jpg",
+    },
   ];
-
 
   return (
     <div className="pt-[60px] max-lg:pt-0 max-sm:pt-0 flex flex-col gap-4">
       <div>
-        <Marquee speed={40} play={false} className="p-2 flex gap-2">
+        <Marquee autoFill speed={40} className="p-2 flex gap-2">
           <div className="flex pl-4 rounded-3xl flex-row gap-4 ">
             {firstRow.map((item, index) => (
               <div
@@ -89,26 +88,29 @@ const WorkCarousel = () => {
                   backgroundSize: "cover",
                 }}
               >
-                <div className="p-1 w-full max-sm:w-[200px] max-sm:h-[300px] h-full overflow-hidden border-0 object-cover rounded-2xl">
-                  <video
-                    playsInline
-                    preload="auto"
-                    muted
-                    loop
-                    autoPlay
-                    className="aspect-auto overflow-clip object-contain w-full"
-                    src={item.src}
-                    width="260"
-                    height="200"
-                  ></video>
-                </div>
+                {/* {item.type === "video" && (
+                  <div className="p-1 w-full max-sm:w-[200px] max-sm:h-[300px] h-full overflow-hidden border-0 object-cover rounded-2xl">
+                    <video
+                      playsInline
+                      preload="auto"
+                      muted
+                      loop
+                      autoPlay
+                      className="aspect-auto overflow-clip object-contain w-full"
+                      src={item.src}
+                      width="260"
+                      height="200"
+                      key={item.id} // Set a unique key for each video
+                    ></video>
+                  </div>
+                )} */}
               </div>
             ))}
           </div>
         </Marquee>
       </div>
       <div className="flex items-center justify-center">
-        <Marquee speed={40} play={false}  className="p-2 flex gap-2">
+        <Marquee autoFill={true} delay={2} speed={40} className="p-2 flex gap-2">
           <div className="flex pl-4 rounded-3xl flex-row gap-4 justify-center items-center">
             {secondRow.map((item, index) => (
               <div
@@ -121,19 +123,20 @@ const WorkCarousel = () => {
                   backgroundSize: "cover",
                 }}
               >
-                <div className="p-1 w-full max-sm:w-[200px] max-sm:h-[300px] h-full overflow-hidden border-0 object-cover rounded-2xl">
-                  <video
-                    playsInline
-                    preload="auto"
-                    muted
-                    loop
-                    autoPlay
-                    className="aspect-auto overflow-clip object-contain w-full"
-                    src={item.src}
-                    width="260"
-                    height="200"
-                  ></video>
-                </div>
+                {/* {item.type === "video" && (
+                  <div className="p-1 w-full max-sm:w-[200px] max-sm:h-[300px] h-full overflow-hidden border-0 object-cover rounded-2xl">
+                    <video
+                      playsInline
+                      preload="auto"
+                      muted
+                      loop
+                      autoPlay
+                      className="aspect-auto overflow-clip object-contain w-full"
+                      src={item.src}
+                      key={item.id} // Set a unique key for each video
+                    ></video>
+                  </div>
+                )} */}
               </div>
             ))}
           </div>
