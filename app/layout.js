@@ -40,13 +40,17 @@ const source_serif_4 = Source_Serif_4({
 });
 
 export const metadata = {
-  title: "Dribble",
-  description: "Join and collaborate with designers around the world",
+  title: "Dribble- Discover the World's top designers and Creative Professionals",
+  description: "Join and collaborate with designers around the world.",
 };
 
 const RootLayout = ({ children }) => {
   return (
-    <html lang="en" className={`${inter.variable} ${roboto_mono.variable} ${poppins.variable} ${source_serif_4.variable} ${montserrat.variable}`}>
+    <html
+      lang="en"
+      className={`${inter.variable} ${roboto_mono.variable} ${poppins.variable} ${source_serif_4.variable} ${montserrat.variable}`}
+    >
+      <link rel="icon" href="/favicon.ico" />
       <body className="">
         <main className="app">
           <Nav />

@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="py-4 px-2 ">
         <Image src="/assets/icons/dribble.svg" width={76} height={30} />
       </div>
-      <div className="flex flex-row gap-8 font-bold w-2/3 text-xs">
+      <div className="flex flex-row gap-8 font-bold w-2/3 text-xs justify-center items-center">
         <p>For designers</p>
         <p>Hire talent</p>
         <p>Inspiration</p>
