@@ -81,29 +81,33 @@ const WorkCarousel = () => {
               <div
                 key={index}
                 className="w-[300px] max-sm:w-[200px] max-sm:h-[300px] h-[200px] shadow-md rounded-2xl"
-                style={{
-                  backgroundImage: `url(${item.src})`,
-                  backgroundRepeat: "no-repeat",
-                  backgroundPosition: "center",
-                  backgroundSize: "cover",
-                }}
               >
-                {/* {item.type === "video" && (
-                  <div className="p-1 w-full max-sm:w-[200px] max-sm:h-[300px] h-full overflow-hidden border-0 object-cover rounded-2xl">
-                    <video
-                      playsInline
-                      preload="auto"
-                      muted
-                      loop
-                      autoPlay
-                      className="aspect-auto overflow-clip object-contain w-full"
-                      src={item.src}
-                      width="260"
-                      height="200"
-                      key={item.id} // Set a unique key for each video
-                    ></video>
-                  </div>
-                )} */}
+                {item.type === "image" ? (
+                  <img
+                    src={item.src}
+                    alt={`Image ${index + 1}`}
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                      borderRadius: "inherit",
+                    }}
+                  />
+                ) : (
+                  <video
+                    autoPlay
+                    controls={false}
+                    loop
+                    src={item.src}
+                    type="video/mp4"
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                      borderRadius: "inherit",
+                    }}
+                  />
+                )}
               </div>
             ))}
           </div>
@@ -116,27 +120,33 @@ const WorkCarousel = () => {
               <div
                 key={index}
                 className="w-[300px] max-sm:w-[200px] max-sm:h-[300px] h-[200px] shadow-md rounded-3xl p-2"
-                style={{
-                  backgroundImage: `url(${item.src})`,
-                  backgroundRepeat: "no-repeat",
-                  backgroundPosition: "center",
-                  backgroundSize: "cover",
-                }}
               >
-                {/* {item.type === "video" && (
-                  <div className="p-1 w-full max-sm:w-[200px] max-sm:h-[300px] h-full overflow-hidden border-0 object-cover rounded-2xl">
-                    <video
-                      playsInline
-                      preload="auto"
-                      muted
-                      loop
-                      autoPlay
-                      className="aspect-auto overflow-clip object-contain w-full"
-                      src={item.src}
-                      key={item.id} // Set a unique key for each video
-                    ></video>
-                  </div>
-                )} */}
+                {item.type === "image" ? (
+                  <img
+                    src={item.src}
+                    alt={`Image ${index + 8}`}
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                      borderRadius: "inherit",
+                    }}
+                  />
+                ) : (
+                  <video
+                    autoPlay
+                    loop
+                    controls={false}
+                    src={item.src}
+                    type="video/mp4"
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                      borderRadius: "inherit",
+                    }}
+                  />
+                )}
               </div>
             ))}
           </div>

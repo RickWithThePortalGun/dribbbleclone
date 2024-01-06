@@ -1,3 +1,4 @@
+import Footer from "@components/Footer";
 import {
   Hero,
   Carousel,
@@ -48,7 +49,6 @@ export default function Home() {
       <WorkCarousel />
         <Work />
       <CTA />
-      <Start />
     </div>
   );
 }

@@ -3,9 +3,9 @@ import React from "react";
 
 const Motto = () => {
   return (
-    <div className="pt-[80px] max-lg:pt-[50px] max-lg:flex-col flex-1 items-center flex max-sm:flex-col flex-row gap-4 w-full ">
+    <div className="pt-[80px] max-lg:pt-[50px] max-lg:flex-col flex-1 items-center flex max-sm:flex-col flex-row gap-8 w-full ">
       <div className="w-1/2 max-lg:w-full max-sm:w-full">
-        <p className="font-poppins max-lg:text-5xl text-main max-sm:text-center text-8xl max-sm:flex max-sm:justify-center max-sm:text-5xl">
+        <p className="font-poppins max-lg:text-3xl text-main max-sm:text-center text-8xl max-sm:flex max-sm:justify-center max-sm:text-5xl">
           When only the best talent will do.
         </p>
       </div>

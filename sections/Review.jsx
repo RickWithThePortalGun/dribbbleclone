@@ -11,7 +11,7 @@ const Review = () => {
         </div>
         <div className="flex text-[12px] flex-wrap pt-4">
           <Image/>
-          <p><span className="font-bold font-poppins">Lee Munroe — </span> Head of design, OneSignal</p>
+          <p><span className="font-bold font-poppins tracking-wider">Lee Munroe — </span> Head of design, OneSignal</p>
         </div>
       </div>
       <div className="border-none lg:hidden
