@@ -28,7 +28,7 @@ const Nav = () => {
     },
   ];
   return (
-    <nav className="bg-[#fffffc] max-md:w-full w-full max-sm:px-6 max-lg:px-1 max-sm:max-w-sm">
+    <nav className="bg-[#fffffc] max-md:w-full max-w-7xl w-full max-sm:px-2 max-lg:px-1 max-sm:max-w-sm">
       <div className="px-12 max-lg:px-6 max-sm:px-1 py-2 flex justify-between max-sm:justify-between items-center">
         <Image src="/assets/icons/dribble.svg" width={76} height={30} />
         <div className="max-sm:hidden ">
