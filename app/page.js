@@ -17,7 +17,7 @@ import {
 
 export default function Home() {
   return (
-    <div className="relative overflow-x-hidden max-w-7xl mx-auto">
+    <div className="relative overflow-hidden max-w-8xl mx-auto">
       <section className="sm:px-16 px-8 sm:py-24 py-8">
         <Hero />
       </section>
