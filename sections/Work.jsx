@@ -4,7 +4,7 @@ import Button from "@components/Button";
 const Work = () => {
   return (
     <div className="flex justify-center items-center px-6 flex-col sm:flex-row gap-8 py-12">
-      <div className=" w-full h-[350px] bg-[#f8f7f4] rounded-xl p-[40px]">
+      <div className=" w-full h-fit bg-[#f8f7f4] rounded-xl p-[40px]">
         <h1 className="color_box bg-[#b3fbe3] px-4 py-8">Looking for work?</h1>
         <h1 className="font-poppins text-3xl w-full pt-8">
           Find your next opportunity
@@ -23,7 +23,7 @@ const Work = () => {
           />
         </div>
       </div>
-      <div className=" w-full h-[350px] bg-[#f8f7f4] rounded-xl p-[40px]">
+      <div className=" w-full h-fit bg-[#f8f7f4] rounded-xl p-[40px]">
         <h1 className="color_box bg-[#ffabe7] px-4 py-8">Here for inspiration?</h1>
         <h1 className="font-poppins text-3xl w-full pt-8">
         Discover trending designs
